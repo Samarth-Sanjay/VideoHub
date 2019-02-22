@@ -2,7 +2,7 @@
   "name": "videohub",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Samarth-sanjay.github.io/VideoHub",
+  "homepage": "https://samarth-sanjay.github.io/VideoHub/",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
@@ -11,7 +11,8 @@
     "react-scripts": "2.1.2"
   },
   "scripts": {
-    "deploy": "npm run build&&gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
